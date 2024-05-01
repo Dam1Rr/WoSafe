@@ -1,0 +1,23 @@
+.footer-container {
+    background-color: #151418; /* Цвет фона футера */
+    color: #fff; /* Цвет текста */
+    padding: 20px 0; /* Внутренние отступы */
+    text-align: center; /* Выравнивание текста по центру */
+  }
+  
+  .footer-content {
+    max-width: 1200px; /* Максимальная ширина контента */
+    margin: 0 auto; /* Выравнивание по центру */
+  }
+  
+  .footer-text {
+    margin-bottom: 10px; /* Отступ между текстовыми блоками */
+  }
+  
+  /* Медиа-запросы для адаптивности */
+  @media only screen and (max-width: 768px) {
+    .footer-content {
+      padding: 0 20px; /* Уменьшение внутренних отступов на мобильных устройствах */
+    }
+  }
+  
