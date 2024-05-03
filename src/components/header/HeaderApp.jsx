@@ -5,7 +5,7 @@ const HeaderApp = () => {
     <header className="header">
       <nav>
         <div className="logo">
-          <h1 className="logoApp">WoSafe</h1>
+          <h1 className="logoApp">My safety</h1>
         </div>
         <input type="checkbox" id="menu-toggle" />
         <label htmlFor="menu-toggle" className="menu-icon">

@@ -1,6 +1,6 @@
 .app-container {
   text-align: center;
-  padding: 5vw; 
+  padding: 5vw;
 }
 
 .idle {
@@ -17,7 +17,7 @@
 
 .app-container {
   text-align: center;
-  padding: 5vw; 
+  padding: 5vw;
 }
 
 .idle {
@@ -33,12 +33,12 @@
 }
 
 .acceleration-data {
-  margin-top: 5vw; 
+  margin-top: 5vw;
 }
 
 @media only screen and (max-width: 600px) {
   .app-container {
-    padding: 10vw; 
+    padding: 10vw;
   }
 
   .acceleration-data {
@@ -48,23 +48,27 @@
 
 @media only screen and (max-width: 400px) {
   .app-container {
-    padding: 15vw; 
+    padding: 15vw;
   }
 
   .acceleration-data {
-    margin-top: 15vw; 
+    margin-top: 15vw;
   }
 }
 
 h1 {
-  color: #333; 
+  color: #333;
 }
 
 .walk h1 {
-  color: #000;
+  color: #9e2626;
 }
 
 .run h1 {
-  color: #fff; 
+  color: #fff;
 }
 
+.speed {
+  color: rgb(214, 200, 200);
+  margin-bottom: 20px;
+}

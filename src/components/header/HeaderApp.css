@@ -8,8 +8,8 @@
   position: sticky;
   top: 0;
   width: 100%;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  background-color: #151418;
+  box-shadow: 0 4px 20px rgba(135, 146, 18, 0.1);
+  background-color: #35b421;
   z-index: 1;
   margin-bottom: 50px;
 }
@@ -24,7 +24,7 @@ nav {
 .logo h1 {
   font-size: 24px;
   font-weight: bold;
-  color: #fff;
+  color: #e5ebde;
   margin: 0;
 }
 
@@ -101,3 +101,4 @@ nav {
     cursor: pointer;
   }
 }
+
