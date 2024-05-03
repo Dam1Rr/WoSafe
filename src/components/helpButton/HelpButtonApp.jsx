@@ -4,9 +4,12 @@ import "./HelpButtonApp.css";
 const HelpButton = () => {
   const [modalVisible, setModalVisible] = useState(false);
   const [sendToAllContacts, setSendToAllContacts] = useState(false);
+  const [sendLocation, setSendLocation] = useState(false);
+  const [sendToParents, setSendToParents] = useState(false);
+  const [sendToEmergency, setSendToEmergency] = useState(false);
   const [selectedContacts, setSelectedContacts] = useState([]);
 
-  const contacts = ["Наима", "Темирлан", "Адилкан", "Спаретра", "Дамир"];
+  const contacts = ["User 1", "User 2", "User 3", "User 4", "User 5"];
 
   const handleClick = () => {
     setModalVisible(true);
@@ -18,6 +21,14 @@ const HelpButton = () => {
     selectedContacts.forEach((contact) => {
       console.log(`Отправлено уведомление ${contact}: ${notificationMessage}`);
     });
+
+    if (sendToParents) {
+      console.log("Отправлено уведомление родителям");
+    }
+
+    if (sendToEmergency) {
+      console.log("Отправлено уведомление экстренным службам");
+    }
 
     setModalVisible(false);
     alert("Сигнал о помощи отправлен!");
@@ -45,9 +56,9 @@ const HelpButton = () => {
   };
 
   return (
-    <div className="help-button-container">
-      <button onClick={handleClick} className="help-button">
-        Help!
+    <div className="wrap">
+      <button onClick={handleClick} className="button">
+        Click
       </button>
       {modalVisible && (
         <div className="modal">
@@ -55,7 +66,7 @@ const HelpButton = () => {
             <span className="close" onClick={handleClose}>
               &times;
             </span>
-            <h2 className="modal-title">Отправить сигнал о помощи</h2>
+            <h2 className="modal-title">Вызвать помощь</h2>
             <label className="checkbox-label">
               <input
                 type="checkbox"
@@ -78,6 +89,31 @@ const HelpButton = () => {
                 </li>
               ))}
             </ul>
+            <label className="checkbox-label">
+              <h2 className="moree">Дополнительно</h2>
+              <input
+                type="checkbox"
+                checked={sendLocation}
+                onChange={() => setSendLocation(!sendLocation)}
+              />
+              Отправить моё местоположение
+            </label>
+            <label className="checkbox-label">
+              <input
+                type="checkbox"
+                checked={sendToParents}
+                onChange={() => setSendToParents(!sendToParents)}
+              />
+              Сообщить родителям
+            </label>
+            <label className="checkbox-label">
+              <input
+                type="checkbox"
+                checked={sendToEmergency}
+                onChange={() => setSendToEmergency(!sendToEmergency)}
+              />
+              Сообщить экстренным службам
+            </label>
             <button onClick={handleConfirm} className="confirm-button">
               Подтвердить
             </button>
@@ -89,6 +125,3 @@ const HelpButton = () => {
 };
 
 export default HelpButton;
-
-
-

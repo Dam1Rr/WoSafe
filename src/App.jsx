@@ -1,9 +1,8 @@
 import "./App.css";
+import AccelerometerApp from "./components/accelerometr/AccelerometerApp";
 import Footer from "./components/footer/FooterApp";
 import HeaderApp from "./components/header/HeaderApp";
 import HelpButton from "./components/helpButton/HelpButtonApp";
-import NavigationApp from "./components/navigation/NavigationApp";
-
 
 function App() {
   return (
@@ -11,7 +10,7 @@ function App() {
       <HeaderApp />
       <HelpButton />
       <Footer />
-      <NavigationApp/>
+      <AccelerometerApp/>
     </div>
   );
 }

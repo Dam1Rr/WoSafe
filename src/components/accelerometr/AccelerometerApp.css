@@ -1,0 +1,70 @@
+.app-container {
+  text-align: center;
+  padding: 5vw; 
+}
+
+.idle {
+  background-color: #f0f0f0;
+}
+
+.walk {
+  background-color: #ffd966;
+}
+
+.run {
+  background-color: #ff7043;
+}
+
+.app-container {
+  text-align: center;
+  padding: 5vw; 
+}
+
+.idle {
+  background-color: #f0f0f0;
+}
+
+.walk {
+  background-color: #ffd966;
+}
+
+.run {
+  background-color: #ff7043;
+}
+
+.acceleration-data {
+  margin-top: 5vw; 
+}
+
+@media only screen and (max-width: 600px) {
+  .app-container {
+    padding: 10vw; 
+  }
+
+  .acceleration-data {
+    margin-top: 10vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .app-container {
+    padding: 15vw; 
+  }
+
+  .acceleration-data {
+    margin-top: 15vw; 
+  }
+}
+
+h1 {
+  color: #333; 
+}
+
+.walk h1 {
+  color: #000;
+}
+
+.run h1 {
+  color: #fff; 
+}
+
